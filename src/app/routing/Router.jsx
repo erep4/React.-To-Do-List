@@ -5,7 +5,7 @@ const getCurrentPath = () => {
     const pathname = window.location.pathname
 
     return pathname.startsWith(BASE_URL)
-        ? pathname/slice(BASE_URL.length-1) || '/'
+        ? pathname.slice(BASE_URL.length-1) || '/'
         : pathname
 }
 
